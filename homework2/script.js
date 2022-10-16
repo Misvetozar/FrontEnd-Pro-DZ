@@ -35,4 +35,3 @@ switch (sign) {
 
 
 alert('Вот что вышло: ' + operandA + sign + operandB + ' = ' + result + '. Круто :)')
-0
