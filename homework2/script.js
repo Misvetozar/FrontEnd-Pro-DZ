@@ -10,7 +10,7 @@ do {
 
 let sign = prompt ('Введите оператор');
 
-while (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/' )
+while (sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/')
 { 
     sign = prompt ('Введите оператор');
 }
@@ -31,7 +31,5 @@ switch (sign) {
         break;
 
   }
-
-
 
 alert('Вот что вышло: ' + operandA + sign + operandB + ' = ' + result + '. Круто :)')
