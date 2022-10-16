@@ -6,7 +6,7 @@ const evenSum = getEvenSum(maxNumber);
 
 showResult(oddSum, evenSum);
 
-// =========
+// ========
 
 function getNumber(title){
     let num = prompt(title);
@@ -18,7 +18,6 @@ while (isNumberInvalid(num))
 
 return +num;
 }
-
 
 function isNumberInvalid(val){
     return val === null || val.trim() === '' || isNaN(val) || val<=0;
