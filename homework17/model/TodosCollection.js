@@ -26,8 +26,6 @@ class TodosCollection {
             this.list = this.list.filter((item) => item.id !== id);
         })
     }
-
-
     createTodo(data){
         data.isDone = false;
 

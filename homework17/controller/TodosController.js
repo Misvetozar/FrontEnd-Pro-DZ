@@ -19,6 +19,7 @@ constructor(container){
        container.append(this.#listView.el);
        container.append(this.#formView.el);
 
+       
        this.#collection = new TodosCollection();
        this.#collection.fetchList().then(() => {
           this.#listView.renderList(this.#collection.list);
