@@ -24,9 +24,9 @@ class FormView {
         }
 
         #initView(){
-            this.el = htmlToElement(FormView.formTemplate);
+            this.$el = $(FormView.formTemplate);
 
-            this.el.addEventListener('submit', (e) => {
+            this.$el.on('submit', (e) => {
                 e.preventDefault();
 
                const data =  this.#getFormData();
@@ -40,7 +40,7 @@ class FormView {
 
         #getFormData(){
             return {
-                title: this.el.elements.title.value,
+                title: this.$el[0].elements.title.value,
             };
         }
         #resetFormData(){

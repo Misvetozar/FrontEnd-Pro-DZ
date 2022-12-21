@@ -1,0 +1,1 @@
+new NotesController($('.container'));

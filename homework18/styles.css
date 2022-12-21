@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+}
+
+input[type="text"], textarea {
+    color: #55677d;
+}
+
+.u-full-height{
+    height: 100%;
+}
+  
+.container {
+    max-width: 100%;
+}
+
+.field {
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+.heading {
+    width: 500px;
+    height: 50px;
+    border-bottom: 1px solid #55677d;
+}
+
+.heading button{
+    float: right;
+    margin: 5px;
+}
+
+.note-description{
+    height: 160px;
+}
+
+.note {
+    width: 170px;
+    height: 50px;
+    background-color: #dfe6ed;;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+	border: none;
+	border-radius: 4px;
+	font-size: 12.5px;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: top;
+	color: #55677d;
+}
+
+.note .delete-note{
+    float: right;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.note .drag-note{
+    float: left;
+    margin: 2px;
+    cursor: move;
+}
+
+.button-primary{
+    display: inline-block;
+	box-sizing: border-box;
+	padding: 0 16px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12.5px;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: top;
+	color: #55677d;
+	background-color: #dfe6ed;
+
+}
+
+.button-primary:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+.button-primary:hover {
+	opacity: 0.88;
+}
+.button-primary:active {
+	line-height: 32px;
+}

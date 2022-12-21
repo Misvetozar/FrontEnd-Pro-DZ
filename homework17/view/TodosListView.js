@@ -1,5 +1,5 @@
 class TodosListView {
-    el = null;
+    $el = null;
     #config = null;
 
     static CLASSES = {
@@ -7,6 +7,10 @@ class TodosListView {
         DELETE_BTN_CLASS: 'delete-btn',
         TASK_DONE_CLASS: 'done',
     };
+
+    static todoListTemplate = `
+        <div class="task-list u-full-width"></div>
+    `
 
     static todoItemTemplate = `
             <div class="task-item {{doneClass}}" data-todo-id="{{id}}">
@@ -38,11 +42,13 @@ class TodosListView {
     }
     
     #initView(){
-            this.el = document.createElement('div');
 
-            this.el.className = 'task-list u-full-width';
 
-            this.el.addEventListener('click', (e) => {
+
+            this.$el = $(TodosListView.todoListTemplate);
+
+
+            this.$el.on('click', (e) => {
                 const todoId = TodosListView.getTodoId(e.target);
                 
                 if (e.target.classList.contains(TodosListView.CLASSES.DELETE_BTN_CLASS)){
@@ -55,9 +61,7 @@ class TodosListView {
     }
 
     renderList(list){
-        this.el.innerHTML = list
-        .map(TodosListView.generateTodoItemHtml)
-        .join('');
+        this.$el.html(list.map(TodosListView.generateTodoItemHtml).join(''));
     }
 
     deleteTodo(id){
