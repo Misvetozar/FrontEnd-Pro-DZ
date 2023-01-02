@@ -7,7 +7,7 @@ export class ContactsTable extends Component {
     return (
       <div>
         <ContactTableHeader />
-        <ContactTableList list={this.props.list} />
+        <ContactTableList list={this.props.list} onDelete={this.props.onDelete}/>
       </div>
     );
   }
