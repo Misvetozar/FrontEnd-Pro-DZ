@@ -1,0 +1,33 @@
+.navigation {
+    border-bottom: 1px solid rgb(157, 114, 114);
+    ;
+    min-width: 750px;
+
+}
+.navigation-link {
+    cursor: pointer;
+    padding: 12px;
+}
+
+.navigation-link.active {
+    color: rgb(243, 201, 186);
+    background-color: rgb(83, 52, 52);
+    padding: 12px;
+    transition: 1s ;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+
+}
+
+.navigation-link:active {
+    color: rgb(243, 201, 186);
+    background-color: rgb(147, 120, 120);
+    padding: 12px;
+    transition: 0.3s ;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+
