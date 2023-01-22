@@ -19,7 +19,6 @@ export default function useUser(id) {
             api.get('users/' + id).then(({ data }) => setUser(data))
         }
     }, [id])
-
    function changeUser(diff){
         setUser({...user, ...diff});
     }
