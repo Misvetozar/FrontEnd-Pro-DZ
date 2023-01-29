@@ -1,0 +1,41 @@
+
+  
+  .task-item {
+    color: aliceblue;
+    border: 1 px solid rgb(230, 210, 210);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 14px;
+    background-color: rgb(94, 63, 63);
+    min-width: 300px;
+    padding: 0 25px;
+    margin: 0 15px 10px 0;
+    outline: none;
+    border: 1px solid rgb(131, 114, 114);
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+ 
+    box-shadow: 0 4px 6px rgba(76, 153, 167, 0.1), 0 1px 3px rgb(0 0 0 / 8%);
+    
+  }
+  .task-item.done {
+    background-color: green;
+  }
+  .delete-btn {
+    float: right;
+  }
+
+  .u-full-width {
+    margin-bottom: 10px;
+  }
+
+  .buttonSubmit {
+    width: 200px;
+  }
+
